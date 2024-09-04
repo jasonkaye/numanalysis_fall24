@@ -1,3 +1,7 @@
+% Simple MATLAB demo
+%
+% From Lecture 1
+
 %% Linear Algebra
 
 v = [1;2;3];    % Make a vector

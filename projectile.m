@@ -1,4 +1,6 @@
-% Equations of projectile motion
+% Solving equations of projectile motion for initial angle
+%
+% From Lectures 1 & 2; demonstrates a simple root-finding task.
 
 g = 9.8;    % Gravitational constant
 v0 = 15;    % Initial velocity
