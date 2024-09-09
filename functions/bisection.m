@@ -3,7 +3,7 @@
 % Inputs
 % f         Function handle for f
 % [a,b]     Initial guess interval
-% niter     Number of iterations
+% itermax     Number of iterations
 %
 % Output
 % x         Vector containing all iterates of bisection method
@@ -12,7 +12,7 @@
 % f(a) must differ from the sign of f(b). Otherwise, this function will
 % return an error.
 
-function [x,xiter] = bisection(f,a,b,niter)
+function [x,xiter] = bisection(f,a,b,itermax)
 
 fa = f(a);
 fb = f(b);
@@ -21,8 +21,8 @@ if (sign(fa)==sign(fb))
     error('sign(f(a)) must be different from sign(f(b))');
 end
 
-xiter = zeros(niter+1,1);   % Store each iterate of bisection method
-for i=1:niter
+xiter = zeros(itermax+1,1);   % Store each iterate of bisection method
+for i=1:itermax
 
     c = (a+b)/2;    % Compute midpoint
     xiter(i) = c;   % Store this iterate
@@ -40,6 +40,6 @@ for i=1:niter
 end
 
 x = (a+b)/2; % Final iterate is current midpoint
-xiter(niter+1) = x;
+xiter(itermax+1) = x;
 
 end
