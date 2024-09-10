@@ -3,7 +3,7 @@
 % Inputs
 % f         Function handle for f
 % [a,b]     Initial guess interval
-% itermax     Number of iterations
+% itermax   Number of iterations
 %
 % Output
 % x         Approximate root of f(x)=0
@@ -40,7 +40,7 @@ for i=1:itermax
     end
 end
 
-x = (a+b)/2; % Final iterate is current midpoint
+x = (a+b)/2; % Final result is current midpoint
 xiter(itermax+1) = x;
 
 end
