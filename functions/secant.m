@@ -8,7 +8,7 @@
 %
 % Output
 % x         Approximate root of f(x)=0
-% xiter     Vector containing all iterates of Newton's method
+% xiter     Vector containing all iterates of secant method
 
 function [x,xiter] = secant(f,x0,x1,itermax)
 
