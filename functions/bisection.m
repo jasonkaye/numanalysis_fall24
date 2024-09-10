@@ -6,7 +6,8 @@
 % itermax     Number of iterations
 %
 % Output
-% x         Vector containing all iterates of bisection method
+% x         Approximate root of f(x)=0
+% xiter     Vector containing all iterates of bisection method
 %
 % Note: In bisection method, [a,b] must contain a root, and the sign of
 % f(a) must differ from the sign of f(b). Otherwise, this function will
