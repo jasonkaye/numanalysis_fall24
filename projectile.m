@@ -17,10 +17,28 @@ xlabel('\theta','FontSize',30)
 ylabel('f(\theta)','FontSize',30)
 
 % Find a solution of f(theta) = 0 using built-in MATLAB solver
-theta0 = 0;              % Initial guess
-theta0 = fzero(f,theta0) % Output solution
-residual = f(theta0)     % Output residual 
+theta0 = 0;                  % Initial guess
+theta_true = fzero(f,theta0) % Output solution
+residual = f(theta0)         % Output residual 
 
 % Plot solution
 hold on;
-plot(theta0,f(theta0),'o'); hold off
+plot(theta_true,f(theta_true),'o'); hold off
+
+% Try bisection method
+addpath functions/
+itermax = 30;
+a = 0;
+b = pi/4;
+theta = bisection(f,a,b,itermax);
+disp(['Residual of bisection = ',num2str(abs(f(theta)))]);
+
+% Try Newton's method
+theta0 = 0.02;
+fp = @(theta) 2*(v0^2/g)*cos(2*theta);
+itermax = 4;
+theta = newton(f,fp,theta0,itermax);
+disp(['Residual of Newton = ',num2str(abs(f(theta)))]);
+
+
+
