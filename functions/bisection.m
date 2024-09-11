@@ -41,6 +41,7 @@ for i=1:itermax
         fb = fc;
     else % Since sign(f(a))/=sign(f(b)) always, f(c)=0 in this case
         x = c;
+        xiter(i+1:end) = [];
         return;
     end
 end
