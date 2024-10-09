@@ -9,7 +9,7 @@ term = 1;
 ssum = 1;
 for k = 1:nterm
     term = -x*term/k;    % Compute next term of series
-    ssum = ssum + term; % Add next term to sum
+    ssum = ssum + term;  % Add next term to sum
 
     fprintf('k = %2d, term = %12.4e, ssum = %12.4e\n', k, term, ssum);
 

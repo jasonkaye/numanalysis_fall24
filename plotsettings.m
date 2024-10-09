@@ -1,5 +1,4 @@
 % Script to get plot settings and formatting
-
 set(groot, 'defaulttextInterpreter','latex')
 set(groot, 'defaultAxesTickLabelInterpreter','latex');
 set(groot, 'defaultLegendInterpreter','latex');
