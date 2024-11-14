@@ -1,4 +1,4 @@
-% Lagrange interpolation demo
+% Demo: polynomial interpolation at equispaced nodes
 
 addpath functions
 plotsettings;

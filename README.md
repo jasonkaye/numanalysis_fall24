@@ -15,6 +15,7 @@ Here is a list of the example scripts:
 - bestfit.m: line of best fit via least squares
 - rqi.m: Rayleigh quotient iteration demo
 - polyinterp_equi.m: polynomial interpolation at equispaced nodes using Lagrange formula and barycentric formula
+- polyinterp_cheb.m: polynomial interpolation at Chebyshev nodes using barycentric formula
 
 Here is a list of functions:
 
