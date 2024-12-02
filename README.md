@@ -16,6 +16,7 @@ Here is a list of the example scripts:
 - rqi.m: Rayleigh quotient iteration demo
 - polyinterp_equi.m: polynomial interpolation at equispaced nodes using Lagrange formula and barycentric formula
 - polyinterp_cheb.m: polynomial interpolation at Chebyshev nodes using barycentric formula
+- ptr.m: demonstration of rapid convergence of periodic trapezoid rule
 
 Here is a list of functions:
 
@@ -24,3 +25,7 @@ Here is a list of functions:
 - secant.m: secant method for given number of iterations
 - gausselim_nopivot.m: Gaussian elimination without pivoting
 - baryinterp.m: polynomial interpolation using barycentric formula
+
+Other files:
+
+- lgwt: folder containing open source code for Gauss-Legendre quadrature
